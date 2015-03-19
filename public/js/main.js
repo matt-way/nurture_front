@@ -9,15 +9,23 @@ var app = angular.module('nurture', [])
 
 	})
 	// alter header menu on scroll
-	.directive('nScroll', function($window, $document){
+	.directive('nScroll', function($window, $document, $timeout){
 		return {
 			scope: { nScroll: '=' },
 			link: function(scope, elem, attrs) {
-				angular.element($window).bind("scroll", function() {
+
+				function handleScroll() {
 					var top  = $window.pageYOffset;
 					scope.nScroll = top > parseInt(attrs.nScrollOffset);
 					$scope.$apply();
+				}
+
+				angular.element($window).bind("scroll", function() {
+					handleScroll();
 				});
+
+				// run on load
+				$timeout(handleScroll);
 			}
 		};
 	});

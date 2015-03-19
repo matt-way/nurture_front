@@ -37,10 +37,23 @@ body {
 	line-height: 50px;
 	margin-right: 75px;
 }
+/* Nav items */
 .menu-nav-item{
 	display: inline-block;
 	font-size: 16px;
 	margin: 0px 15px;
+	color: #ddd;
+	transition: color;
+}
+.menu-nav-item:hover {
+	color: #fff;
+	transition: color 0.5s ease;
+}
+.menu-scrolled .menu-nav-item {
+	color: #000;
+}
+.menu-scrolled .menu-nav-item:hover {
+	color: #888;
 }
 
 /* header */
