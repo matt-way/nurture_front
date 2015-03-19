@@ -75,6 +75,7 @@ body {
 }
 .about-things{
 	text-align: center;
+	padding-bottom: 50px;
 }
 .about-thing{
 	display: inline-block;
@@ -96,4 +97,32 @@ body {
 	margin-top: 15px;
 	color: #727272;
 
+}
+
+/* Articles */
+.articles{
+
+}
+.article{
+	height: 500px;
+	text-align: center;
+	color: #FFF;
+	background-size: cover;
+}
+.future-of-software{
+	background-image: url(http://i.imgur.com/t5uue.jpg);
+}
+.another-article{
+	background-image: url(http://i.imgur.com/0UC1COj.gif);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.article-title{
+	padding-top: 200px;
+	font-size: 50px;
+	font-weight: 300;
+}
+.article-subtitle{
+	padding-top: 15px;
+	font-size: 25px;
+	font-weight: 100;
 }
