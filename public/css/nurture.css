@@ -1,22 +1,99 @@
 
 body {
-	background-color: rgb(145, 195, 255);
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+/* menu */
+.menu{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #FFF;
+	height: 70px;
+	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
+	padding-top: 20px;
+}
+.menu-logo{
+	background-image: url(http://placehold.it/150x50);
+	height: 50px;
+	width: 150px;
+	float: left;
+	margin-left: 75px;
+}
+.menu-nav{
+	float: right;
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 75px;
+}
+.menu-nav-item{
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 15px;
 }
 
-.centred {
-	width:400px;
-	height:400px;
-	position:absolute;
-	left:50%;
-	top:50%;
-	margin-left: -200px;
-	margin-top: -230px;
-}
-
-h2 {
-	color: #424242;
-	font-family: Arial, Sans-serif;
-	margin-top: -20px;
+/* header */
+.header{
+	height: 100%;
+	background-color: #000;
+	background-image: url(http://i.imgur.com/QWXaQiD.jpg);
+	background-size: cover;
 	text-align: center;
-	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.header-title{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 50px;
+	color: #FFF;
+	padding-top: 250px;
+	width: 450px;
+}
+.header-subtitle{
+/*	display: inline-block;*/
+	font-weight: 200;
+	font-size: 20px;
+	color: #FFF;
+	padding-top: 40px;
+}
+
+/* about */
+.about{
+	padding-top: 100px;
+}
+.about-title{
+	text-align: center;
+	font-size: 45px
+}
+.about-subtitle{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.about-things{
+	text-align: center;
+}
+.about-thing{
+	display: inline-block;
+	margin: 15px;
+	max-width: 330px;
+}
+.about-thing-image{
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background-image: url(http://i.imgur.com/OmG54bu.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.about-thing-title{
+	font-size: 25px;
+}
+.about-thing-desc{
+	margin-top: 15px;
+	color: #727272;
+
 }
