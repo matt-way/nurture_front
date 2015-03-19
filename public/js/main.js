@@ -17,7 +17,7 @@ var app = angular.module('nurture', [])
 				function handleScroll() {
 					var top  = $window.pageYOffset;
 					scope.nScroll = top > parseInt(attrs.nScrollOffset);
-					$scope.$apply();
+					scope.$apply();
 				}
 
 				angular.element($window).bind("scroll", function() {

@@ -47,7 +47,7 @@ body {
 }
 .menu-nav-item:hover {
 	color: #fff;
-	transition: color 0.5s ease;
+	transition: color 0.3s ease;
 }
 .menu-scrolled .menu-nav-item {
 	color: #000;
