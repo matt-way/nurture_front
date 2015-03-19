@@ -134,10 +134,20 @@ body {
 .about-thing-image{
 	display: inline-block;
 	height: 200px;
-	width: 200px;
-	background-image: url(http://i.imgur.com/OmG54bu.png);
+	width: 300px;
+	background-size: auto;
 	background-position: center;
 	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+.about-thing-1{
+	background-image: url(../images/screen1.jpg);
+}
+.about-thing-2{
+	background-image: url(../images/screen2.jpg);
+}
+.about-thing-3{
+	background-image: url(../images/screen3.jpg);
 }
 .about-thing-title{
 	font-size: 25px;
