@@ -39,8 +39,11 @@ body {
 .header{
 	height: 100%;
 	background-color: #000;
-	background-image: url(http://i.imgur.com/QWXaQiD.jpg);
-	background-size: cover;
+	background:  
+		url(../images/dots.png), 
+		url(http://i.imgur.com/QWXaQiD.jpg);
+	background-size: auto, cover; 
+	/*background-size: cover;*/
 	text-align: center;
 }
 .header-title{
