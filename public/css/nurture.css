@@ -4,6 +4,11 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
+
+/* Common styles */
+.border-bottom{
+	border-bottom: 1px solid #CBCBCB;
+}
 /* menu */
 .menu{
 	position: fixed;
@@ -89,13 +94,15 @@ body {
 }
 .about-title{
 	text-align: center;
-	font-size: 45px
+	font-size: 45px;
+	margin: 0px 75px;
 }
 .about-subtitle{
 	text-align: center;
 	font-size: 20px;
 	padding-top: 20px;
 	padding-bottom: 50px;
+	margin: 0px 75px;
 }
 .about-things{
 	text-align: center;
@@ -149,4 +156,51 @@ body {
 	padding-top: 15px;
 	font-size: 25px;
 	font-weight: 100;
+}
+
+/* Contact */
+.contact{
+	height: 500px;
+	text-align: center;
+	/*background-image: url(../images/dots.png);*/
+}
+.contact-title{
+	font-size: 45px;
+	padding-top: 200px;
+}
+.contact-container{
+	padding-top: 25px;
+}
+.contact-input{
+	padding: 0px 5px;
+	margin: 0px;
+	height: 48px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	border: 1px solid #CBCBCB;
+	border-radius: 5px;
+}
+.contact-input:focus{
+	outline: none;
+}
+.contact-button{
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	margin: 0px;
+	padding: 0px 20px;
+	border-radius: 5px;
+	background-color: #FFF;
+	border: 1px solid #CBCBCB;
+	height: 48px;
+	vertical-align: -1px;
+	font-weight: 300;
+}
+.contact-button:hover{
+	background-color: #DDD;
+}
+.contact-button:active{
+	background-color: #BBB;
+}
+.contact-button:focus{
+	outline: none;
 }
