@@ -21,6 +21,7 @@ body {
 	padding-top: 10px;
 	color: #fff;
 	transition: background-color 0.1s ease;
+	z-index: 1;
 }
 .menu-scrolled{
 	color: #000;
@@ -62,18 +63,24 @@ body {
 }
 
 /* header */
-.header{
-	height: 100%;
-	background-color: #000;
-	background:  
-		url(../images/dots.png), 
-		url(http://i.imgur.com/QWXaQiD.jpg);
-	background-size: auto, cover; 
-	/*background-size: cover;*/
-	text-align: center;
-}
 #player{
 	height: 100%;
+}
+.header{
+	height: 100%;
+	/*background-color: #000;*/
+	/*background-size: cover;*/
+	position: relative;
+}
+.header-overlay{
+	background: url(../images/dots.png);
+	background-size: auto, cover; 
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .header-title{
 	display: inline-block;

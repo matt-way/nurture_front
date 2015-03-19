@@ -6,26 +6,15 @@ function onYouTubeIframeAPIReady() {
 		height: '100%',
 		width: '100%',
 		videoId: 'Oq8XQBNHzCo',
-		playerVars: { 'autoplay': 0, 'controls': 1 },
+		playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0 },
 		events: {
-			'onReady': onPlayerReady,
 			'onStateChange': onPlayerStateChange
 		}
 	});
 }
-
-function onPlayerReady(event) {
-	event.target.playVideo();
-}
-
-var done = false;
+//loop
 function onPlayerStateChange(event) {
-	if (event.data == YT.PlayerState.PLAYING && !done) {
-		setTimeout(stopVideo, 6000);
-		done = true;
+	if (player.getPlayerState() == 0) {
+		player.playVideo();
 	}
-}
-
-function stopVideo() {
-	player.stopVideo();
 }
