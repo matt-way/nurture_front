@@ -1,4 +1,4 @@
-<html>
+<html ng-app="nurture">
 <head>
 	<title>Nurture</title>
 
@@ -13,14 +13,14 @@
 	<link rel="shortcut icon" type="image/ico" href="/images/nurture-icon-main.ico"/>
 	<link rel="stylesheet" href="./css/nurture.css">
 </head>
-<body>
-	<div class="menu">
+<body ng-controller="mainCtrl">
+	<div class="menu" ng-class="{ 'menu-scrolled': header.scrolled }" n-scroll="header.scrolled" n-scroll-offset="100">
 		<div class="menu-logo"></div>
 		<div class="menu-nav">
 			<div class="menu-nav-item">Home</div>
 			<div class="menu-nav-item">About</div>
 			<div class="menu-nav-item">Articles</div>
-			<div class="menu-nav-item">Home</div>
+			<div class="menu-nav-item">Contact</div>
 		</div>
 	</div>
 	<div class="header">
@@ -62,5 +62,8 @@
 			<div class="article-subtitle">And nobody really minded.</div>
 		</div>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
