@@ -67,18 +67,26 @@ body {
 }
 
 /* header */
-#player{
-	height: 100%;
-}
 .header{
 	height: 100%;
 	/*background-color: #000;*/
 	/*background-size: cover;*/
 	position: relative;
 }
+.header-video{
+	background-color: #000;
+}
+.header-grid{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.4;
+	background: url(../images/grid0.gif);
+	background-size: auto; 
+}
 .header-overlay{
-	background: url(../images/dots.png);
-	background-size: auto, cover; 
 	text-align: center;
 	position: absolute;
 	top: 0;

@@ -25,7 +25,11 @@
 		</div>
 	</div>
 	<div class="header border-bottom">
-		<div id="player"></div>
+		<video class="header-video" width="100%" height="100%" autoplay>
+			<source src="http://nurture.s3-website-ap-southeast-1.amazonaws.com/nurture.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<div class="header-grid"></div>
 		<div class="header-overlay">
 			<div class="header-title">
 				Well, would you look at this!
@@ -88,8 +92,6 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
-	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/main.js"></script>
-	<script src="js/yt.js"></script>
 </body>
 </html>
