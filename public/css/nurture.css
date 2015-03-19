@@ -15,7 +15,7 @@ body {
 	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
 	padding-top: 10px;
 	color: #fff;
-	transition: background-color 0.1s ease;
+	transition: background-color 0.3s ease;
 }
 .menu-scrolled{
 	color: #000;
@@ -110,9 +110,9 @@ body {
 	display: inline-block;
 	height: 200px;
 	width: 200px;
-	background-image: url(http://i.imgur.com/OmG54bu.png);
+	/*background-image: url(http://i.imgur.com/OmG54bu.png);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 .about-thing-title{
 	font-size: 25px;
