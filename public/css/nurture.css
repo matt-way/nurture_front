@@ -20,12 +20,7 @@ body {
 	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
 	padding-top: 10px;
 	color: #fff;
-<<<<<<< HEAD
 	transition: background-color 0.3s ease;
-=======
-	transition: background-color 0.1s ease;
-	z-index: 1;
->>>>>>> f656568053e7fd8842a5b5b5d14a9aad0b6096c9
 }
 .menu-scrolled{
 	color: #000;
@@ -100,6 +95,10 @@ body {
 	font-size: 20px;
 	color: #FFF;
 	padding-top: 40px;
+}
+.header-btn{
+	background-color: #2196f3;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* about */
