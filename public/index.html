@@ -12,6 +12,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" type="image/ico" href="/images/nurture-icon-main.ico"/>
 	<link rel="stylesheet" href="./css/nurture.css">
+	<link rel="stylesheet" href="./css/fontello.css">
 </head>
 <body ng-controller="mainCtrl">
 	<div class="menu" ng-class="{ 'menu-scrolled': header.scrolled }" n-scroll="header.scrolled" n-scroll-offset="100">
@@ -24,6 +25,7 @@
 		</div>
 	</div>
 	<div class="header border-bottom">
+		<div id="player"></div>
 		<div class="header-title">
 			Well, would you look at this!
 		</div>
@@ -64,15 +66,22 @@
 	</div>
 	<div class="contact">
 		<div class="contact-title">Want to look at this?</div>
-		<div class="contact-container">
+		<div class="contact-form">
 			<form>
 				<input class="contact-input" type="text"/>
 				<button class="contact-button" type="button">Yep</button>
 			</form>
 		</div>
+		<div class="contact-icons">
+			<span class="icon-twitter contact-icon"></span>
+			<span class="icon-angellist contact-icon"></span>
+			<span class="icon-mail-alt contact-icon"></span>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<script src="js/main.js"></script>
+	<script src="js/yt.js"></script>
 </body>
 </html>

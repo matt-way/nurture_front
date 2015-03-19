@@ -72,6 +72,9 @@ body {
 	/*background-size: cover;*/
 	text-align: center;
 }
+#player{
+	height: 100%;
+}
 .header-title{
 	display: inline-block;
 	font-weight: 300;
@@ -166,9 +169,9 @@ body {
 }
 .contact-title{
 	font-size: 45px;
-	padding-top: 200px;
+	padding-top: 100px;
 }
-.contact-container{
+.contact-form{
 	padding-top: 25px;
 }
 .contact-input{
@@ -203,4 +206,15 @@ body {
 }
 .contact-button:focus{
 	outline: none;
+}
+.contact-icons{
+	padding-top: 50px;
+	font-size: 60px;
+}
+.contact-icon{
+	padding: 15px;
+}
+.contact-icon:hover {
+	color: #6E6E6E;
+	transition: color 0.3s ease;
 }
