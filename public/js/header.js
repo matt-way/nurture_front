@@ -33,9 +33,9 @@ function createGeometry(width, height, points) {
 
 function generatePolygons(width, height) {
     var options = {
-    	bleed: 1,
-    	cellsize: 1,
-    	cellpadding: 1
+    	bleed: 15,
+    	cellsize: 15,
+    	cellpadding: 1.5
     };
     var cellsX = Math.ceil((width+options.bleed*2)/options.cellsize);
     var cellsY = Math.ceil((height+options.bleed*2)/options.cellsize);
@@ -57,7 +57,7 @@ function buildScene() {
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-	var geometry = createGeometry(16, 9, 100);
+	var geometry = createGeometry(1600, 900, 100);
 
 	
 
@@ -65,11 +65,11 @@ function buildScene() {
 	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide, wireframe: true} );
 	cube = new THREE.Mesh( geometry, material );
 
-	cube.position.x -= 8;
-	cube.position.y -= 4.5;
+	cube.position.x -= 800;
+	cube.position.y -= 450;
 	scene.add( cube );
 
-	camera.position.z = 5;
+	camera.position.z = 80;
 
 
 	renderer = new THREE.WebGLRenderer();
