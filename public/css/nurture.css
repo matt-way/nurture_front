@@ -186,8 +186,8 @@ a{
 }
 .about-thing-image{
 	display: inline-block;
-	height: 200px;
-	width: 200px;
+	height: auto;
+	width: 300px;
 	/*background-image: url(http://i.imgur.com/OmG54bu.png);
 	background-position: center;
 	background-repeat: no-repeat;*/
