@@ -48,18 +48,20 @@ a{
 	left: 0px;
 	right: 0px;
 	/*background-color: rgba(255,255,255,0.3);*/
-	height: 60px;
-	border-bottom: 1px solid rgba(255,255,255,0.3);
-	padding-top: 10px;
+	height: 70px;
+	border-bottom: 1px dotted rgba(255,255,255,0.3);
+	padding-top: 20px;
 	color: #fff;
 	transition: background-color 0.3s ease;
 	z-index: 100;
 }
 .menu-scrolled{
 	color: #000;
+	height: 60px;
+	padding-top: 10px;
 	background-color: #fff;
 	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 1);
-	transition: all 0.5s ease;
+	transition: all 0.4s ease;
 }
 .menu-logo{
 	background-image: url(../images/logo_light.png);
@@ -217,7 +219,7 @@ a{
 	transition: all 0.5s ease;
 }
 .article:hover{
-	background-size: auto, 102%;
+	background-size: auto, 101%;
 	transition: all 0.5s ease;
 }
 .article-title{
