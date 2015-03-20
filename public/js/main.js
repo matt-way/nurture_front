@@ -78,6 +78,8 @@ var app = angular.module('nurture', [])
 	        link: function($scope, $element, $attrs) {
 	 
 	            initialize();
+
+	            var offset = -50;	            
 	    
 	            /* initialize -
 	            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -107,7 +109,7 @@ var app = angular.module('nurture', [])
 	                
 	                var i;
 	                var startY = currentYPosition();
-	                var stopY = elmYPosition(eID);
+	                var stopY = Math.max(0, elmYPosition(eID) + offset);
 	                var distance = stopY > startY ? stopY - startY : startY - stopY;
 	                if (distance < 100) {
 	                    scrollTo(0, stopY); return;

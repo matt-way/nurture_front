@@ -134,17 +134,19 @@ a{
 	font-size: 50px;
 	color: #FFF;	
 	width: 450px;
+	margin-top: 10px;
 }
 .logo-large{
 	padding-top: 250px;
-	width: 120px;
+	width: 140px;
 }
 .header-subtitle{
 /*	display: inline-block;*/
 	font-weight: 200;
 	font-size: 20px;
 	color: #FFF;
-	padding-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 .header-btn{	
 	margin: 0 auto;
