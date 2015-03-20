@@ -9,7 +9,10 @@ body {
 /* Common styles */
 
 .border-bottom{
-	border-bottom: 3px solid #CBCBCB;
+	border-bottom: 8px solid rgba(0,0,0,0.4);
+}
+.border-bottom-dark{
+	border-bottom: 8px solid #666;	
 }
 
 .btn{
@@ -130,7 +133,7 @@ a{
 }
 .header-title{
 	display: inline-block;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 50px;
 	color: #FFF;	
 	width: 450px;
