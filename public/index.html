@@ -16,35 +16,38 @@
 </head>
 <body ng-controller="mainCtrl">
 	<div class="menu" ng-class="{ 'menu-scrolled': header.scrolled }" n-scroll="header.scrolled" n-scroll-offset="100">
-		<div class="menu-logo">
+		<div class="menu-logo clickable" anchor-smooth-scroll="home">
 			<div class="menu-logo-overlay"></div>
 		</div>
 		<div class="menu-nav">
-			<div class="menu-nav-item">Home</div>
-			<div class="menu-nav-item">About</div>
-			<div class="menu-nav-item">Articles</div>
-			<div class="menu-nav-item">Contact</div>
+			<div class="menu-nav-item clickable" anchor-smooth-scroll="home">Home</div>
+			<div class="menu-nav-item clickable" anchor-smooth-scroll="about">About</div>
+			<div class="menu-nav-item clickable" anchor-smooth-scroll="articles">Articles</div>
+			<div class="menu-nav-item clickable" anchor-smooth-scroll="contact">Contact</div>
 		</div>
 	</div>
-	<div class="header border-bottom">
+	<div id="home" class="header border-bottom">
 		<!--<video class="header-video" width="100%" height="100%" autoplay>
 			<source src="http://nurture.s3-website-ap-southeast-1.amazonaws.com/nurture.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 		</video>-->
 		<div class="header-grid"></div>
 		<div class="header-overlay">
+			<div class="big-logo">
+				<img class="logo-large" src="./images/logo_large.PNG"/>
+			</div>
 			<div class="header-title">
 				The Future of AI Development
-			</div>
+			</div>			
 			<div class="header-subtitle">
 				Coming Soon
 			</div>
-			<div class="header-btn">
-				Learn More.
+			<div class="btn header-btn clickable" anchor-smooth-scroll="about">
+				LEARN MORE
 			</div>
 		</div>
 	</div>
-	<div class="about border-bottom">
+	<div id="about" class="about border-bottom">
 		<div class="about-title">We are building the tools future software developers will use to create intelligent machines.</div>
 		<div class="about-subtitle">Fingerstache twee Echo Park Intelligentsia flannel master cleanse. Cronut mlkshk church-key meditation taxidermy. Leggings gluten-free Brooklyn, semiotics sartorial Pitchfork heirloom Marfa wayfarers fashion axe. Ugh butcher four dollar toast flexitarian. Health goth post-ironic Vice, beard pop-up tofu forage paleo cray. Vegan paleo disrupt Tumblr. Meh seitan Helvetica Bushwick.</div>
 		<div class="about-things">
@@ -71,7 +74,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="articles">
+	<div id="articles" class="articles">
 		<div class="article border-bottom future-of-software">
 			<div class="article-title">The Future of AI Looks Nothing Like Software Development</div>
 			<div class="article-subtitle">As you know it.</div>
@@ -81,12 +84,13 @@
 			<div class="article-subtitle">And nobody really minded.</div>
 		</div>
 	</div>
-	<div class="contact">
-		<div class="contact-title">Want to look at this?</div>
+	<div id="contact" class="contact">
+		<div class="contact-title">Sign up to Our newsletter</div>
+		<div class="contact-subtitle">Be the first to hear about upcoming releases, new articles, etc.</div>
 		<div class="contact-form">
 			<form>
-				<input class="contact-input" type="text"/>
-				<button class="contact-button" type="button">Yep</button>
+				<input class="contact-input" type="text" placeholder="Email address"/>
+				<button class="btn contact-btn" type="button">SUBSCRIBE NOW</button>
 			</form>
 		</div>
 		<div class="contact-icons">

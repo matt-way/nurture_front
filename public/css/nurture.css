@@ -5,11 +5,37 @@ body {
 	font-weight: 300;
 }
 
+/**********************************************************/
 /* Common styles */
+
 .border-bottom{
-	border-bottom: 1px solid #CBCBCB;
+	border-bottom: 3px solid #CBCBCB;
 }
+
+.btn{
+	color: #fff;
+	font-weight: 400;	
+	padding: 10px 12px;
+	border: none;
+	border-radius: 2px;
+	background-color: #2196f3;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	transition: all 450ms ease;
+}
+.btn:hover{
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+	transition: all 450ms ease;
+	background-color: #2196ff;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+
+/**********************************************************/
 /* menu */
+
 .menu{
 	position: fixed;
 	top: 0px;
@@ -67,7 +93,10 @@ body {
 	color: #000;
 }
 
+
+/**********************************************************/
 /* header */
+
 .header{
 	height: 100%;
 	/*background-color: #000;*/
@@ -100,9 +129,12 @@ body {
 	display: inline-block;
 	font-weight: 300;
 	font-size: 50px;
-	color: #FFF;
-	padding-top: 250px;
+	color: #FFF;	
 	width: 450px;
+}
+.logo-large{
+	padding-top: 250px;
+	width: 120px;
 }
 .header-subtitle{
 /*	display: inline-block;*/
@@ -111,23 +143,15 @@ body {
 	color: #FFF;
 	padding-top: 40px;
 }
-.header-btn{
-	color: #fff;
+.header-btn{	
 	margin: 0 auto;
-	width: 120px;
-	padding: 10px;
-	border-radius: 2px;
-	background-color: #2196f3;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.08), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	transition: all 650ms ease;
-}
-.header-btn:hover {
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-	transition: all 650ms ease;
-	background-color: #2196ff;
+	width: 120px;	
 }
 
+
+/**********************************************************/
 /* about */
+
 .about{
 	padding-top: 100px;
 }
@@ -169,16 +193,22 @@ body {
 
 }
 
-/* Articles */
-.articles{
 
-}
+/**********************************************************/
+/* Articles */
+
 .article{
-	height: 500px;
+	height: 400px;
 	text-align: center;
 	color: #FFF;
-	background-size: cover;
+	background-size: 100%;
+	background-position: center;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	transition: all 0.5s ease;
+}
+.article:hover{
+	background-size: 102%;
+	transition: all 0.5s ease;
 }
 .future-of-software{
 	background-image: url(http://i.imgur.com/t5uue.jpg);
@@ -187,9 +217,9 @@ body {
 	background-image: url(http://i.imgur.com/0UC1COj.gif);
 }
 .article-title{
-	padding-top: 200px;
+	padding-top: 150px;
 	font-size: 50px;
-	font-weight: 300;
+	font-weight: 400;
 }
 .article-subtitle{
 	padding-top: 15px;
@@ -197,15 +227,22 @@ body {
 	font-weight: 100;
 }
 
+/*************************************/
 /* Contact */
+
 .contact{
 	height: 500px;
 	text-align: center;
 	/*background-image: url(../images/dots.png);*/
 }
 .contact-title{
-	font-size: 45px;
+	font-size: 42px;
+	font-weight: 400;
 	padding-top: 100px;
+}
+.contact-subtitle{
+	font-weight: 300;
+	font-size: 16px;
 }
 .contact-form{
 	padding-top: 25px;
@@ -213,39 +250,24 @@ body {
 .contact-input{
 	padding: 0px 5px;
 	margin: 0px;
-	height: 48px;
+	height: 40px;
 	font-family: 'Roboto', sans-serif;
-	font-size: 40px;
-	border: 1px solid #CBCBCB;
-	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	border: none;
+	border-bottom: 1px solid #CBCBCB;
+	border-radius: 0px;
+	width: 350px;
 }
 .contact-input:focus{
 	outline: none;
 }
-.contact-button{
-	font-family: 'Roboto', sans-serif;
-	font-size: 40px;
-	margin: 0px;
-	padding: 0px 20px;
-	border-radius: 5px;
-	background-color: #FFF;
-	border: 1px solid #CBCBCB;
-	height: 48px;
-	vertical-align: -1px;
-	font-weight: 300;
-}
-.contact-button:hover{
-	background-color: #DDD;
-}
-.contact-button:active{
-	background-color: #BBB;
-}
-.contact-button:focus{
-	outline: none;
+.contact-btn{
+	margin-left: 5px;
 }
 .contact-icons{
 	padding-top: 50px;
-	font-size: 60px;
+	font-size: 46px;	
 }
 .contact-icon{
 	padding: 15px;
