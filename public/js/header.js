@@ -1,5 +1,5 @@
 
-var scene, camera, renderer, cube;
+var scene, camera, renderer, geometry, cube;
 
 function createGeometry(width, height, points) {
 	var g = new THREE.Geometry();
@@ -27,15 +27,16 @@ function createGeometry(width, height, points) {
 		var start = 3*i;
 		g.faces.push( new THREE.Face3(start, start+1, start+2));
 	}
+	g.mergeVertices();
 
 	return g;
 }
 
 function generatePolygons(width, height) {
     var options = {
-    	bleed: 15,
-    	cellsize: 15,
-    	cellpadding: 1.5
+    	bleed: 50,
+    	cellsize: 50,
+    	cellpadding: 5
     };
     var cellsX = Math.ceil((width+options.bleed*2)/options.cellsize);
     var cellsY = Math.ceil((height+options.bleed*2)/options.cellsize);
@@ -57,9 +58,7 @@ function buildScene() {
 	scene = new THREE.Scene();
 	camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-	var geometry = createGeometry(1600, 900, 100);
-
-	
+	geometry = createGeometry(1600, 900, 100);
 
 	//var geometry = new THREE.PlaneGeometry( 5, 20, 32 );
 	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, side: THREE.DoubleSide, wireframe: true} );
@@ -69,7 +68,7 @@ function buildScene() {
 	cube.position.y -= 450;
 	scene.add( cube );
 
-	camera.position.z = 80;
+	camera.position.z = 400;
 
 
 	renderer = new THREE.WebGLRenderer();
@@ -85,6 +84,12 @@ function render(delta) {
 
 	//cube.rotation.x += 0.1;
 	//cube.rotation.y += 0.1;
+
+	for(var v=0; v<geometry.vertices.length; v++){
+		var vert = geometry.vertices[v];
+		vert.z += (Math.random() * 10) - 5;
+	}
+	geometry.verticesNeedUpdate = true;
 
 	requestAnimationFrame(render);
 	renderer.render(scene, camera);
