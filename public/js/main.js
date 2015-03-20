@@ -14,9 +14,16 @@ var app = angular.module('nurture', [])
 				url: 'https://medium.com/@matt__way/the-future-of-ai-looks-nothing-like-software-development-as-you-know-it-f7d6358c864b'
 			},
 			{
-				title: 'How young heath ledger something something',
-				subtitle: 'and nobody really minded',
-				background: 'http://i.imgur.com/0UC1COj.gif'
+				title: 'What you don’t understand about the coming robot revolution',
+				subtitle: 'It\'s Yours',
+				background: 'https://d262ilb51hltx0.cloudfront.net/max/1800/1*l1hKwnWBy-fbSSHcZiDuFw.png',
+				url: 'https://medium.com/@matt__way/what-you-dont-understand-about-the-coming-robot-revolution-9d5b6a4f75e1'
+			},
+			{
+				title: 'Building Conscious Machines',
+				subtitle: 'The Hard Problem Delusion',
+				background: 'https://s3.amazonaws.com/compressionaddict/mind_games.jpg',
+				url: 'http://www.compressionaddict.com/posts/mind/building-conscious-machines-the-hard-problem-delusion'
 			}
 		];
 
