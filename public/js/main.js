@@ -6,10 +6,35 @@ var app = angular.module('nurture', [])
 			scrolled: false
 		};
 
+		$scope.articles = [
+			{ 
+				title: 'The Future of AI Looks Nothing Like Software Development',
+				subtitle: '...as you know it.',
+				background: 'http://i.imgur.com/t5uue.jpg',
+				url: 'https://medium.com/@matt__way/the-future-of-ai-looks-nothing-like-software-development-as-you-know-it-f7d6358c864b'
+			},
+			{
+				title: 'How young heath ledger something something',
+				subtitle: 'and nobody really minded',
+				background: 'http://i.imgur.com/0UC1COj.gif'
+			}
+		];
+
 		$scope.scrollTo = function(id) {
 			$location.hash(id);
 			$anchorScroll();
 		};
+	})
+	.directive('backImg', function(){
+	    return function(scope, element, attrs){
+	        var url = 'url(' + attrs.backImg + ')';
+	        if(attrs.backOverlay){
+	        	url = 'url(' + attrs.backOverlay + '), ' + url;
+	        }
+	        element.css({
+	        	'background-image': url          
+	        });
+	    };
 	})
 	// alter header menu on scroll
 	.directive('nScroll', function($window, $document, $timeout){

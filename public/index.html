@@ -75,14 +75,10 @@
 		</div>
 	</div>
 	<div id="articles" class="articles">
-		<div class="article border-bottom future-of-software">
-			<div class="article-title">The Future of AI Looks Nothing Like Software Development</div>
-			<div class="article-subtitle">As you know it.</div>
-		</div>
-		<div class="article border-bottom another-article">
-			<div class="article-title">How Young Heath Ledger Banggged Everyones Mum</div>
-			<div class="article-subtitle">And nobody really minded.</div>
-		</div>
+		<a ng-repeat="article in articles" class="article border-bottom clickable" back-img="{{article.background}}" back-overlay="./images/dots.png" ng-href="{{article.url}}" target="_blank">
+			<div class="article-title">{{article.title}}</div>
+			<div class="article-subtitle">{{article.subtitle}}</div>
+		</a>		
 	</div>
 	<div id="contact" class="contact">
 		<div class="contact-title">Sign up to Our newsletter</div>
