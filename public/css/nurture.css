@@ -290,9 +290,13 @@ a{
 
 @media only screen and (max-width : 700px) {
 	.article{
-		background-size: cover;
+		background-size: auto, cover;
 		height: auto;
 		min-height: 300px;
+	}
+	.article:hover{
+		background-size: auto, cover;
+		transition: none;
 	}
 	.article-title{
 		font-size: 30px;
