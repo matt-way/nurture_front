@@ -70,12 +70,12 @@ var light, light2;
 function buildScene() {
 	scene = new THREE.Scene();
 
-	//scene.add( new THREE.AmbientLight( 0x002000 ) );
-	light = new THREE.PointLight(0xffffff, 0.2, 100);
+	scene.add( new THREE.AmbientLight( 0x060606 ) );
+	light = new THREE.PointLight(0xffffff, 0.25, 100);
 	light.position.set(0, 0, 2);
 	scene.add(light);
 
-	light2 = new THREE.PointLight(0xffffff, 0.2, 100);
+	light2 = new THREE.PointLight(0xffffff, 0.25, 100);
 	light2.position.set(0, 0, 2);
 	scene.add(light2);
 
@@ -83,7 +83,7 @@ function buildScene() {
 	var material = new THREE.MeshLambertMaterial( {color: 0xffffff, shading: THREE.FlatShading, overdraw: 0.5 } );
 	var plane = new THREE.Mesh( geometry, material );
 
-	messDepth(geometry);
+	//messDepth(geometry);
 
 
 	scene.add( plane );
@@ -144,6 +144,7 @@ function render(delta) {
 		var vert = geometry.vertices[v];
 		vert.z += (Math.random()*0.5) - 0.25;
 	}
+	geometry.computeFaceNormals();
 	geometry.verticesNeedUpdate = true;
 
 	positionLight();

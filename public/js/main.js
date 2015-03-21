@@ -115,7 +115,7 @@ var app = angular.module('nurture', [])
 	                    scrollTo(0, stopY); return;
 	                }
 	                var speed = Math.round(distance / 100);
-	                speed = Math.min(speed, 30);	                
+	                speed = Math.min(speed, 25);	                
 	                var step = Math.round(distance / 25);
 	                var leapY = stopY > startY ? startY + step : startY - step;
 	                var timer = 0;
