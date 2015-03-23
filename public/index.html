@@ -27,7 +27,7 @@
 		</div>
 	</div>
 	<div id="home" class="header border-bottom">
-		<div id="art"></div>
+		<div id="art" header-art=""></div>
 		<div class="home-content">
 			<div class="vert-center">
 				<div class="big-logo">
@@ -54,7 +54,7 @@
 				<div class="img-wrapper">
 					<img class="about-thing-image" src="images/test_brain.jpg"/>
 				</div>
-				<div class="about-thing-title">No coding necessary</div>
+				<div class="about-thing-title">No Coding Necessary</div>
 				<div class="about-thing-desc">We are experimenting with various visual language prototypes, to create the most intuitive, easy way to describe AI architectures. 
 </div>
 			</div>
@@ -62,7 +62,7 @@
 				<div class="img-wrapper">
 					<img class="about-thing-image" src="images/visualiser.jpg"/>
 				</div>
-				<div class="about-thing-title">Lots of modules</div>
+				<div class="about-thing-title">Open Modular System</div>
 				<div class="about-thing-desc">We are building modules for everything from architectual components, to visualisation, training, I/O and diagnostics. Everyone can also build and share their own.</div>
 			</div>
 			<div class="about-thing">
@@ -82,25 +82,28 @@
 	</div>
 	<div id="contact" class="contact">
 		<div class="contact-title">Sign up to Our community list</div>
-		<div class="contact-subtitle">Be the first to hear about upcoming releases, new articles, etc.</div>
+		<div class="contact-subtitle">Be the first to hear about upcoming releases, news, articles, etc.</div>
 		<div class="contact-form">
-			<form>
-				<input class="contact-input" type="text" placeholder="Email address"/>
+
+			<!-- Begin MailChimp Signup Form -->
+			<form action="//nurture.us10.list-manage.com/subscribe/post?u=5e1ddb43512f4b33ef174b319&amp;id=5f191234b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<input class="contact-input" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email Address">
 				<div class="contact-btn-container">
-					<button class="btn contact-btn clickable" type="button">SUBSCRIBE NOW</button>
-				</div>
+			    	<input type="submit" value="SUBSCRIBE NOW" name="subscribe" id="mc-embedded-subscribe" class="btn contact-btn clickable">
+			    </div>
 			</form>
+			<!--End mc_embed_signup-->
 		</div>
 		<div class="contact-icons">
-			<span class="icon-twitter contact-icon clickable"></span>
-			<span class="icon-angellist contact-icon clickable"></span>
-			<span class="icon-mail-alt contact-icon clickable"></span>
+			<a class="icon-twitter contact-icon clickable" target="_blank" href="http://www.twitter.com/_nurture"></a>
+			<a class="icon-angellist contact-icon clickable" target="_blank" href="http://angel.co/nurture-1"></a>
+			<a class="icon-mail-alt contact-icon clickable" href="mailto:contact@nurture.ai"></a>
 		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-	<script src="js/header.js"></script>
+	<!-- // <script src="js/header.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -353,6 +353,9 @@ a{
 	padding-top: 50px;
 	font-size: 46px;	
 }
+.contact-icons a{
+	color: #000;
+}
 .contact-icon{
 	padding: 15px;
 }
