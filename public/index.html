@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="./css/fontello.css">
 </head>
 <body ng-controller="mainCtrl">
-	<div class="menu" ng-class="{ 'menu-scrolled': header.scrolled }" n-scroll="header.scrolled" n-scroll-offset="100">
+	<div class="menu" ng-class="{ 'menu-scrolled': header.scrolled }" n-scroll="header.scrolled" n-scroll-offset="90">
 		<div class="menu-logo clickable" anchor-smooth-scroll="home">
 			<div class="menu-logo-overlay"></div>
 		</div>
@@ -46,31 +46,35 @@
 		</div>
 	</div>
 	<div id="about" class="about border-bottom-dark">
-		<div class="about-title">We're creating the tools future software developers will use to build intelligent machines.</div>
-		<div class="about-subtitle">Right now it is very difficult to work with AI. You need to first become a good coder, and then learn AI techniques. Modern AI appears to be converging on conceptually simple components, where most of the time spent is on experimenting with different architectures. The architectures are only going to become more complex, making collaboration and scaling a big issue.</div>
-		<div class="about-subtitle">Nurture is an IDE that solves these problems, by introducing a modular, intuitive visual language for building AI pipelines. No coding knowledge is required, unless you want to build your own components, dramatically lowering the barrier of entry. Nurture incorporates version control into projects, not just for the architecture designs, but also for the module states, allowing for easy experimentation and analysis of training. Components can be shared, and combined like lego blocks, to create more complex systems that are greater than the sum of their parts. Imagine...</div>
-		<div class="about-things">
-			<div class="about-thing">
-				<div class="img-wrapper">
-					<img class="about-thing-image" src="images/test_brain.jpg"/>
-				</div>
-				<div class="about-thing-title">No Coding Necessary</div>
-				<div class="about-thing-desc">We are experimenting with various visual language prototypes, to create the most intuitive, easy way to describe AI architectures. 
-</div>
+		<div class="about-inner">
+			<div class="about-title">We're creating the tools future software developers will use to build intelligent machines.</div>
+			<div class="about-text">
+				<div class="about-subtitle">Modern AI is harder than it should be. Many of the current state-of-the-art systems are conceptually quite simple, yet require extensive knowledge of narrow frameworks, and often result in reinventing the wheel. Combining or integrating systems is extremely difficult due to a lack of standards, and the need to have a strong coding background and deep domain knowledge. As the future becomes more and more about complex architectures, we are going to see a rise in issues of collaboration and scaling if the current techniques don't change.</div>
+				<div class="about-subtitle">Nurture is an IDE that solves these problems, by introducing a modular, intuitive visual language for building AI pipelines. No coding knowledge is required, unless you want to build your own components, dramatically lowering the barrier of entry. It incorporates version control, not only for project architctures, but also for modules states, allowing for fast, easy experimentation and analysis of training. Components can be shared and combined like lego blocks, allowing you to create much more complex systems, greater than the sum of their parts.</div>
 			</div>
-			<div class="about-thing">
-				<div class="img-wrapper">
-					<img class="about-thing-image" src="images/visualiser.jpg"/>
+			<div class="about-things">
+				<div class="about-thing">
+					<div class="img-wrapper">
+						<img class="about-thing-image" src="images/test_brain.jpg"/>
+					</div>
+					<div class="about-thing-title">No Coding Necessary</div>
+					<div class="about-thing-desc">We are experimenting with various visual language prototypes, to create the most intuitive, easy way to describe AI architectures. 
+	</div>
 				</div>
-				<div class="about-thing-title">Open Modular System</div>
-				<div class="about-thing-desc">We are building modules for everything from architectual components, to visualisation, training, I/O and diagnostics. Everyone can also build and share their own.</div>
-			</div>
-			<div class="about-thing">
-				<div class="img-wrapper">
-					<img class="about-thing-image" src="images/test_brain.jpg"/>
+				<div class="about-thing">
+					<div class="img-wrapper">
+						<img class="about-thing-image" src="images/ragdoll.jpg"/>
+					</div>
+					<div class="about-thing-title">Open Modular System</div>
+					<div class="about-thing-desc">We are building modules for everything from architectual components, to visualisation, training and I/O. Everyone can also build and share their own. Connect your system to anything.</div>
 				</div>
-				<div class="about-thing-title">Look. At. This!</div>
-				<div class="about-thing-desc">Look at it. Would you just look at it for a minute.</div>
+				<div class="about-thing">
+					<div class="img-wrapper">
+						<img class="about-thing-image" src="images/visualiser.jpg"/>
+					</div>
+					<div class="about-thing-title">Focus on Training</div>
+					<div class="about-thing-desc">We understand that most time is spent on training, and have focused on providing the best tools and visualisers possible to run experiments, and debug your systems.</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -95,15 +99,14 @@
 			<!--End mc_embed_signup-->
 		</div>
 		<div class="contact-icons">
-			<a class="icon-twitter contact-icon clickable" target="_blank" href="http://www.twitter.com/_nurture"></a>
-			<a class="icon-angellist contact-icon clickable" target="_blank" href="http://angel.co/nurture-1"></a>
+			<a class="icon-twitter contact-icon clickable" target="_blank" href="http://www.twitter.com/_nurture"></a>			
+			<a class="mb-letters clickable" target="_blank" href="http://www.memeBig.com/a/nurture"></a>			
 			<a class="icon-mail-alt contact-icon clickable" href="mailto:contact@nurture.ai"></a>
 		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
-	<!-- // <script src="js/header.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>	
 	<script src="js/main.js"></script>
 </body>
 </html>

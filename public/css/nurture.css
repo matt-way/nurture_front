@@ -200,19 +200,27 @@ a{
 .about{
 	padding-top: 100px;
 }
+.about-inner{
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .about-title{
 	text-align: center;
-	font-size: 45px;
-	margin: 0px 75px;
+	font-size: 45px;	
+	margin-bottom: 20px;
 }
-.about-subtitle{
-	text-align: center;
+.about-text{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.about-subtitle{	
 	font-size: 20px;
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	margin: 0px 75px;
 }
 .about-things{
+	margin-top: 20px;
 	text-align: center;
 	padding-bottom: 50px;
 }
@@ -220,6 +228,7 @@ a{
 	display: inline-block;
 	margin: 15px;
 	max-width: 330px;
+	vertical-align: middle;
 }
 .about-thing-image{
 	display: inline-block;
@@ -246,15 +255,17 @@ a{
 	}
 	.about-title{
 		margin: 0px 10px;
-		font-size: 25px;
+		font-size: 25px;	
+		font-weight: 400;	
 	}
 	.about-subtitle{
-		margin: 0pc 10px;
+		margin: 0pc 20px;
 		font-size: 18px;
 	}
 	.about-thing{
 		width: 100%;
 		margin: 0px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -299,6 +310,7 @@ a{
 	}
 	.article-title{
 		font-size: 30px;
+		font-weight: 400;
 		margin: 0px 10px;
 	}
 	.article-subtitle{
@@ -363,10 +375,41 @@ a{
 	color: #6E6E6E;
 	transition: color 0.3s ease;
 }
+a.mb-letters {
+	display: inline-block;
+	width: 60px;
+	height: 36px;
+	margin: 0 5px;
+	margin-bottom: -4px;
+	background-image: url(../images/mb_black.png);
+	vertical-align: baseline;
+}
+a.mb-letters:hover {
+	background-image: url(../images/mb_grey.png);
+}
 
 @media only screen and (max-width : 700px) {
+	
+	.contact-title{
+		font-size: 40px;
+		padding-top: 50px;
+	}
+
+	.contact-subtitle{
+		margin: 0 20px;
+	}
+
+	.contact-input {
+		margin: 0 20px;
+		width: 80%;
+	}
+
 	.contact-btn-container{
 		display: block;
 		margin-top: 10px;
+	}
+
+	.contact-icon{
+		padding: 10px;
 	}
 }

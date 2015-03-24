@@ -27,7 +27,7 @@ var app = angular.module('nurture', [])
 			}
 		];
 	})
-	.directive('headerArt', function(){
+	.directive('headerArt', function($window){
 		return function(scope, elem, attrs){
 			// scene
 			var scene, renderer, camera;
@@ -97,6 +97,10 @@ var app = angular.module('nurture', [])
 				requestAnimationFrame(render);		
 				renderer.render(scene, camera);
 			}
+
+			angular.element($window).bind('resize', function(){
+				renderer.setSize(window.innerWidth, window.innerHeight);
+			});
 
 			// run
 			buildScene();
