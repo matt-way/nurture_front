@@ -46,8 +46,7 @@ a{
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	right: 0px;
-	/*background-color: rgba(255,255,255,0.3);*/
+	right: 0px;	
 	height: 70px;
 	border-bottom: 1px dotted rgba(255,255,255,0.3);
 	padding-top: 20px;
@@ -127,10 +126,8 @@ a{
 
 .header{
 	height: 100%;
-	/*background-color: #000;*/
-	/*background-size: cover;*/
 	position: relative;
-	/*background: url(../images/bg2.gif);*/
+	background: url(../images/bg2.gif);
 	background-color: #222;
 	text-align: center;
 }
@@ -161,7 +158,6 @@ a{
 	width: 140px;
 }
 .header-subtitle{
-/*	display: inline-block;*/
 	font-weight: 200;
 	font-size: 20px;
 	color: #FFF;
@@ -235,9 +231,6 @@ a{
 	height: auto;
 	width: 300px;
 	margin-bottom: 10px;
-	/*background-image: url(http://i.imgur.com/OmG54bu.png);
-	background-position: center;
-	background-repeat: no-repeat;*/
 }
 .about-thing-title{
 	font-size: 25px;
@@ -325,7 +318,6 @@ a{
 .contact{
 	height: 500px;
 	text-align: center;
-	/*background-image: url(../images/dots.png);*/
 }
 .contact-title{
 	font-size: 45px;
